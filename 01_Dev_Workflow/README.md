@@ -28,8 +28,5 @@ This lesson was created to intro students to working like a developer.
 ###Homework
 
 Review command line and GitHub.
-Write a blog entry about what you learned the first class.
 
-
-
-
+If you have time: https://www.codeschool.com/courses/try-git
