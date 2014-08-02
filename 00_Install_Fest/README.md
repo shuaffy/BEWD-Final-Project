@@ -6,10 +6,14 @@ BACK-END WEB DEVELOPMENT
 
 #Install Git and Ruby
 
-##Mac Users 
+##Mac Users
 
 Commands that look like ```this``` should be entered into your Terminal
 application. It can be found in Applications/Utilities.
+
+One quick shortcut that Jay shared with us:
+https://github.com/ga-instructors/installfest_script
+
 
 1.	__Ensure you have an Apple ID__
 	* You should have one from the pre-work, but if not, [create one now](https://appleid.apple.com/cgi-bin/WebObjects/MyAppleId.woa/wa/createAppleId).
@@ -26,7 +30,7 @@ application. It can be found in Applications/Utilities.
 	* If you have issues, visit the Homebrew install page: [http://mxcl.github.io/homebrew/](http://mxcl.github.io/homebrew/)
 	* To learn more about Hombrew, check out its homepage: http://brew.sh/
 	* NOTE: *For advanced users only*: If you have a _strong_ desire to use a different package management tool (such as MacPorts, or Fink), you may do so, but note that we may not be able to support you if you encounter any issues with your specific tool. Proceed with caution.
-	
+
 4.	__Install git__
 	* In order to manage our code effectively, we need a source control management tool. There are a number of options out there, but Git is by far the best one today.
 	* We will use Homebrew to install Git. Before we do so, let's update homebrew to get the latest 'recipes' for its available libraries:
@@ -49,7 +53,7 @@ application. It can be found in Applications/Utilities.
   		* ```rvm use 2.0.0 --default```
   	* *OPTIONAL:* You may also remove Ruby 1.8.7, if you wish:
   		* ```rvm remove ruby-1.8.7```
-  	
+
 7.	__Restart Your Terminal__
 	* To ensure all the changes you made so far take effect, restart your Terminal app (just quit the app and relaunch it).
 
