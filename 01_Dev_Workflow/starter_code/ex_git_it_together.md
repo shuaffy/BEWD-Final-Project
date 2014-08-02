@@ -7,10 +7,8 @@
 
 | | |
 | ------------- |:-------------|
-| __Topics__ | bash commands, terminal, git, GitHub| 
-| __Description__| Practice using Git and creating pull request.|    
- 
-
+| __Topics__ | bash commands, terminal, git, GitHub|
+| __Description__| Practice using Git and creating pull request.|
 
 ####Task Instructions
 
@@ -21,5 +19,5 @@
 
 **Instructional Notes:**
 
--	Students will have to look up creating pull request. 
+-	Students will have to look up creating pull request.
 -	Go over answers at the end of class.
