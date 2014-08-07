@@ -2,10 +2,6 @@
 
 #BEWD - Working Like A Developer
 
-###Instructor Name
-
-Instructors current role.
-
 ---
 
 
@@ -21,7 +17,7 @@ Instructors current role.
 
 ##Introductions
 
-Your course producer can help you with this.
+PIZZAAA GO.
 
 ---
 
@@ -30,26 +26,10 @@ Your course producer can help you with this.
 
 During this course we will learn (at a high level):
 
-* Command Line / Terminal
-* Git and GitHub
-* Ruby programming language
-* Rails web application framework
-* (Basic) Database Modeling
-
-
-To pass the course you will need to:
-* Complete at least 80% of all assigned homework
-* Complete a final project
-
----
-
-##Course Administration
-
-*	What you will get from us
-	* 	In class labs
-	* 	Homework
-	* 	Slides / student handouts available in GitHub
-	* 	Instructor & TAs!
+* Command Line / Terminal (spoke about already, deep dive..)
+* Git and GitHub (mentioned, more on this.)
+* Ruby programming language (spoke about. inline learning)
+* Rails web application framework (spoke about. inline learning)
 
 ---
 
@@ -75,11 +55,12 @@ Let's define a few terms:
 ###Integrate into the developer community
 
 * Choose the right OS, editors, & tools for your projects.
+  - Setup alias to sublime! (exercise in research [hint hipchat/google])
 * Leverage the online community's vast libraries and documentation.
 * Spread the knowledge you gain, and give back to the community when you can.
 * Take pride & and joy in what you work on.
 * Be efficient:
-  * Use the keyboard as much as possible
+  * Use the keyboard as much as possible  (http://typing.io)
   * If you find yourself doing the same thing repeatedly, automate it
 
 ---
@@ -120,8 +101,6 @@ For Windows:
 * This is the basis of how we will be writing and testing our Ruby applications in the initial portion of this course
 
 ---
-
-
 
 ![GeneralAssemb.ly](../../assets/ICL_icons/Code_along_icon_md.png)
 ##Command Line Basics
@@ -204,6 +183,6 @@ For Windows:
 ## Homework
 
 *	Review command line and GitHub.
-*	Create your first blog entry.
+
 
 ---
