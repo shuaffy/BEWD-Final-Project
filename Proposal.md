@@ -1,3 +1,3 @@
 For my final project I want to...
 
-Ramen App
+Make an app that allows user to mix match ramen noodles / soup and list out the ramen shops that has those, or close to it.
