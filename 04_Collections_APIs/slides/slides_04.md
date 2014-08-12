@@ -2,8 +2,6 @@
 
 #BEWD - Collections, Loops & APIs
 
-###Instructor Name
-
 ---
 
 
