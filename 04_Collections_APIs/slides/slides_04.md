@@ -7,8 +7,9 @@
 
 ##Agenda
 
+* Favorite Board Game!
 *	Recap
-	*	Quick Fire
+	*	Quick Fire (fizzbuzz time!!)
 *	Practical Application Of Collections & Loops (APIs)
 *	Lab Time
 
@@ -161,7 +162,7 @@ Getting Stories
 *	[JSON What It Is, How It Works and How To Use It](http://www.copterlabs.com/blog/json-what-it-is-how-it-works-how-to-use-it/)
 	*	The code in this article is JavaScript. Read the article to get a better understanding of what is JSON don't worry about the code.
 
-__Map versus do__
+__Map versus Each__
 
 *	[Difference Between Map And Each](http://stackoverflow.com/questions/9586989/difference-between-map-and-each)
 
