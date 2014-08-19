@@ -2,13 +2,21 @@
 #Let the computer do the work for you!
 
 puts "Is 7 greater than 8?"
+<<<<<<< HEAD
 puts 7>8
+=======
+puts 7 > 8
+>>>>>>> 5b0be148bbe9290f80814078229be44973534fe3
 
 puts "Is 8 x 77 greater than 600?"
 puts 8 * 77 > 600
 
 puts "Is 1 equal to (7 - 6)?"
+<<<<<<< HEAD
 puts 1 == (7-6)
+=======
+puts 1 == (7 - 6)
+>>>>>>> 5b0be148bbe9290f80814078229be44973534fe3
 
 puts "Is 77 greater than 50 AND (88 / 3) less than 30?"
 puts 77 > 50 && (88/3) < 30
@@ -20,6 +28,15 @@ puts "Are the amount of seconds in an hour greater than or equal to 3000?"
 puts 60*60 >= 3000
 
 puts "Does the word 'slaughter' include the word laughter?"
+<<<<<<< HEAD
 puts "slaughter".include?"laughter"
+=======
+puts 'slaughter'.include? 'laughter'
+
+
+
+
+
+>>>>>>> 5b0be148bbe9290f80814078229be44973534fe3
 
 

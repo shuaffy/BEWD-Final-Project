@@ -52,9 +52,15 @@ categories = Array.new
 assert_equal categories, []
 
 # Add 3 stories to the categories array. Each time using a different method.
+<<<<<<< HEAD
 categories.push("Music") #adds to end of array
 categories.unshift("Weather") #adds to start of array
 categories.<<"Florida" #
+=======
+categories.push("Music") # adds to end of array
+categories.unshift("Weather") # adds to start of array
+categories << "Florida" #
+>>>>>>> 5b0be148bbe9290f80814078229be44973534fe3
 assert_equal ["Florida", "Music", "Weather"], categories.sort
 
 # Ensure only unique categories get stored
@@ -62,10 +68,17 @@ categories << "Florida"
 categories.uniq!
 assert_equal ["Florida", "Music", "Weather"], categories.sort
 
+<<<<<<< HEAD
 # Write a conditional that adds "Family" to the category list if it includes both Animals, and Shopping
 categories << "Animals"
 
 if categories.include?("Animals")&& categories.include?("Shopping")
+=======
+# Write a conditional that adds "Family" to the
+# category list if it includes both Shopping and Animals
+categories << "Animals"
+if categories.include?("Animals") && categories.include?("Shopping")
+>>>>>>> 5b0be148bbe9290f80814078229be44973534fe3
   categories << "Family"
 end
 
@@ -74,7 +87,11 @@ assert_equal(false, categories.include?("Family"))
 categories << "Shopping"
 
 #repeat check here
+<<<<<<< HEAD
 if categories.include?("Animals")&& categories.include?("Shopping")
+=======
+if categories.include?("Animals") && categories.include?("Shopping")
+>>>>>>> 5b0be148bbe9290f80814078229be44973534fe3
   categories << "Family"
 end
 
@@ -84,9 +101,17 @@ assert_equal(true, categories.include?("Family"))
 # persist the sorting of categories
 assert_equal("Animals, Family, Florida, Music, Shopping, Weather", categories.sort!.join(', '))
 assert_equal(%w(Animals Family Florida Music Shopping Weather), categories)
+<<<<<<< HEAD
 
 # get the first category from the array and print it to the screen "First Category: Category here"
 first_category = categories.shift
+=======
+# %w(Animals Family Florida Music Shopping Weather)
+# ['Animals', 'Family', 'Florida', 'Music', 'Shopping', 'Weather']
+
+# Remove the first category from the array and print it to the screen "First Category: Category here"
+first_category = categories.shift  #.first # categories[0]
+>>>>>>> 5b0be148bbe9290f80814078229be44973534fe3
 assert_equal("First Category: Animals", "First Category: #{first_category}")
 assert_equal(5, categories.length) # get it's length
 
@@ -94,7 +119,11 @@ assert_equal(5, categories.length) # get it's length
 
 last_category = categories.pop
 assert_equal("Last Category: Weather", "Last Category: #{last_category}")
+<<<<<<< HEAD
 assert_equal(4, categories.length) # get it's length
+=======
+assert_equal(4, categories.count) # get it's length
+>>>>>>> 5b0be148bbe9290f80814078229be44973534fe3
 
 # Write a conditional that clears the array if there are more than 5 categories and adds "Misc" to it.
 
@@ -103,11 +132,17 @@ if categories.length > 5 #get it's length
   categories << "Misc"
 end
 
+<<<<<<< HEAD
 assert_equal(4, categories.length) # get it's length
+=======
+puts 'asserting'
+assert_equal(4, categories.size) # get it's length
+>>>>>>> 5b0be148bbe9290f80814078229be44973534fe3
 
 categories << "Medicine"
 categories << "Physics"
 
+<<<<<<< HEAD
 if categories.length > 5 #get it's length
   categories.clear # empty the array
   categories << "Misc"
@@ -117,3 +152,33 @@ assert_equal(1, categories.size) # get it's size
 assert_equal(["Misc"], categories)
 
 puts "YOU'RE DONE!"
+=======
+if categories.___ > 5 #get it's length
+  categories.___ # empty the array
+  categories.push "Misc"
+end
+
+assert_equal(1, categories.___) # get it's size
+assert_equal(["Misc"], categories)
+
+puts "YOU'RE DONE!"
+
+
+
+# users = [
+#     {:user => "Salman Ansari", :role => "Instructor"},
+#     {:user => "Brooks Swinnerton", :role=> "TA"},
+#     {:user => "Brian Fountain", :role => "TA"}
+#   ]
+
+#   ga_markets.each do |market|
+#     puts market
+#   end
+
+#   ["NYC", "LA", "SYD", "LDN"].each do |market|
+#     puts market
+#   end
+
+
+
+>>>>>>> 5b0be148bbe9290f80814078229be44973534fe3
