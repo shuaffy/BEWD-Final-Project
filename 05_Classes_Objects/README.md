@@ -20,7 +20,7 @@
 
 
 ###Homework
-
+- []
 -	[Midterm](homework/midterm.rb), due lesson 8.
 
 
