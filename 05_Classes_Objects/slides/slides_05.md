@@ -250,3 +250,7 @@ __Variable Scope__
 -	Introduction to Objects [Ruby Monk](http://rubymonk.com/learning/books/1-ruby-primer/chapters/6-objects/lessons/35-introduction-to-objects)
 -	Building your Own class [Ruby Monk](http://rubymonk.com/learning/books/1-ruby-primer/chapters/7-classes/lessons/40-building-your-own-class)
 
+###Homework
+-	[Midterm](homework/ruby/ruby_midterm/midterm.rb), due lesson 8. (this is 5!)
+- Complete Apartment Lab. Rewrite Secret Number (start with your solution from last homework) to use classes!
+
