@@ -176,12 +176,6 @@ What are some pros and cons of using hashes?
 
 ---
 
-## Homework
-
-*	Midterm due lesson 8.
-
----
-
 
 <img id ='icon' src="../../assets/ICL_icons/Exercise_icon_md.png">
 ##Lab Time
