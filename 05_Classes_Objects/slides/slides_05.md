@@ -176,12 +176,6 @@ What are some pros and cons of using hashes?
 
 ---
 
-## Homework
-
-*	Midterm due lesson 8.
-
----
-
 
 <img id ='icon' src="../../assets/ICL_icons/Exercise_icon_md.png">
 ##Lab Time
@@ -249,4 +243,8 @@ __Variable Scope__
 -	What is Object Oriented Programming [Book Chapter](http://ruby.bastardsbook.com/chapters/oops/)
 -	Introduction to Objects [Ruby Monk](http://rubymonk.com/learning/books/1-ruby-primer/chapters/6-objects/lessons/35-introduction-to-objects)
 -	Building your Own class [Ruby Monk](http://rubymonk.com/learning/books/1-ruby-primer/chapters/7-classes/lessons/40-building-your-own-class)
+
+###Homework
+-	[Midterm](/Homework/Ruby/Ruby_Midterm/midterm.md), due lesson 8. (this is 5!)
+- Complete Apartment Lab. Rewrite Secret Number (start with your solution from last homework) to use classes!
 
