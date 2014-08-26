@@ -3,13 +3,14 @@ def assert_equal(expected, actual)
   raise "Expected #{expected} to match #{actual}" unless expected == actual
 end
 
-# Write a program that prints the numbers from 1 to 100. 
-# But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. 
+# Write a program that prints the numbers from 1 to 100.
+# But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”.
 # For numbers which are multiples of both three and five print “FizzBuzz”.
 #
 # Your code here
 
 def fizzbuzz number
+<<<<<<< HEAD
 	str = ""
 	str += "Fizz" if number %3 == 0
 	str += "Buzz" if number %5 == 0
@@ -19,6 +20,13 @@ end
 
 
 
+=======
+   result = "#{number % 3 == 0 ? 'Fizz' : '' }#{ number % 5 == 0 ? 'Buzz' : '' }"
+   return result unless result.empty?
+   number
+end
+
+>>>>>>> debeaba7d225dcc9ea4b2ad4c9b82ade0b1312f8
 
 # Tests
 assert_equal fizzbuzz(1), 1

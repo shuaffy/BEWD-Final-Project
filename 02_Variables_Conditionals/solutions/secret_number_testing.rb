@@ -1,5 +1,4 @@
 
-
 def welcome
 	print "Guess the number: "
 end
@@ -19,16 +18,17 @@ def mynumber x, y
 	end
 end
 
-count = 3
-until count <1
-welcome
+
+
 x = guessnumber
 y = 8
 mynumber x, y
-count -=1
+
+print welcome
+while guessnumber = gets.chomp!.to_i
+	if guessnumber == 8
+		break
+	else
+	print welcome
 end
-
-
-
-
-
+end
