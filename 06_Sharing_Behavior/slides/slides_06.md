@@ -16,6 +16,8 @@
 ##Scope
 ###Method Scope
 
+``` ruby
+
 	def SuperHero
 		def fly
       "Here we go!"
@@ -32,6 +34,7 @@
   >> fly
   => "I can't."
 
+```
 ---
 
 ##Scope
@@ -41,6 +44,7 @@
 * Below is an example of the SecretNumber class re-implemented to use a class method
 * BONUS: Go back and re-implement secret number exercise using a class method (HINT: the Game object stores the number, so you dont need a secret number object to do so)
 
+  ``` ruby
   class SecretNumber
     # gets a random number between 0-9, adds one so it's between 1-10
     def self.generate
@@ -49,6 +53,7 @@
   end
 
   >> number = SecretNumber.generate
+  ```
 ---
 
 ##Class Methods
