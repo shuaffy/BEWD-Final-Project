@@ -13,6 +13,8 @@ require_relative 'lib/person'
 
 ## First, define our methods
 
+
+
 def create_apartment
   puts "-----------New Apartment-----------"
   puts "What is the apartment number / name?"

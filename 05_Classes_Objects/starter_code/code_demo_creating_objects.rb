@@ -46,19 +46,19 @@ puts "#{edward[:name]} has #{grade_status(edward)} #{edward[:course]}"
 #####################################################################################################
 
 # # How about using a class
-# class Student
-#  attr_accessor :name, :major, :course, :grade
-# end
+class Student
+ attr_accessor :name, :major, :course, :grade
+end
 
-# def grade_status(student)
-#  if student.grade == "F"
-#    "failed"
-#  elsif ["D", "E"].include?(student.grade) && student.major == student.course
-#    "failed"
-#  else
-#    "passed"
-#  end
-# end
+def grade_status(student)
+ if student.grade == "F"
+   "failed"
+ elsif ["D", "E"].include?(student.grade) && student.major == student.course
+   "failed"
+ else
+   "passed"
+ end
+end
 
 # jimmy = Student.new
 # jimmy.name = "Jimmy Mazzy"
@@ -72,11 +72,11 @@ puts "#{edward[:name]} has #{grade_status(edward)} #{edward[:course]}"
 # pepe.course = "Math"
 # pepe.grade = "C"
 
-# edward = Student.new
-# edward.name = "Edward Ellis"
-# edward.major = "Math"
-# edward.course = "Math"
-# edward.grade = "D"
+edward = Student.new
+edward.name = "Edward Ellis"
+edward.major = "Math"
+edward.course = "Math"
+edward.grade = "D"
 
 
 # puts "#{jimmy.name} has #{grade_status(jimmy)} #{jimmy.course}"
@@ -90,19 +90,24 @@ puts "#{edward[:name]} has #{grade_status(edward)} #{edward[:course]}"
 #####################################################################################################
 #####################################################################################################
 # How about adding the grade_status method to our class?
-# class Student
-#   attr_accessor :name, :major, :course, :grade
+class Student
+  attr_accessor :name, :major, :course, :grade
 
-#   def grade_status
-#     if @grade == "F"
-#       "failed"
-#     elsif ["D","E"].include?(@grade) && @major == @course
-#       "failed"
-#     else
-#       "passed"
-#     end
-#   end
-# end
+  def initialize(name, major, course, grade)
+  end
+
+  def grade_status
+    if @grade == "F"
+      "failed"
+    elsif ["D","E"].include?(@grade) && @major == @course
+      "failed"
+    else
+      "passed"
+    end
+  end
+
+
+end
 
 # jimmy = Student.new
 # jimmy.name = "Jimmy Mazzy"

@@ -40,11 +40,22 @@
 #
 # Tips: Copy paste your code from homework 1 where necessary.
 
-$:.unshift (File.dirname(__FILE__))
-require 'lib/game'
+# $:.unshift (File.dirname(__FILE__))
+require_relative 'lib/game'
+require_relative 'lib/person'
+require_relative 'lib/secret_number'
 
 # put code here print a welcome message for your user
+puts "welcome to this number guessing game made by Shuang!"
+puts
 
-# put code here ask the user for their name, and save it
+puts "insert your name: "
+whatsyourname = gets.chomp! 
+SecretNumber = SecretNumber.new(whatsyourname)
+Ohthatsyourname = Person.new(whatsyourname)
+
+
+game = Game.new(Ohthatsyourname)
+game.start
 
 # put code here to create a new game, and start it

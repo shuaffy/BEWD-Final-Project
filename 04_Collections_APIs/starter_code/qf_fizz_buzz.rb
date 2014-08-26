@@ -9,6 +9,16 @@ end
 #
 # Your code here
 
+def fizzbuzz number
+	str = ""
+	str += "Fizz" if number %3 == 0
+	str += "Buzz" if number %5 == 0
+	str = number if str.empty?
+	str
+end
+
+
+
 
 # Tests
 assert_equal fizzbuzz(1), 1
@@ -19,6 +29,9 @@ assert_equal fizzbuzz(15), "FizzBuzz"
 assert_equal fizzbuzz(5175), "FizzBuzz"
 
 # uncomment this code when your tests pass
+
 #1.upto(100) do |number|
-#  puts fizzbuzz(number)
+#puts fizzbuzz(number)
 #end
+
+

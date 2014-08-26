@@ -25,3 +25,4 @@ puts "Please give it a category:"
 category = get_input
 upvotes = calculate_upvotes(story, category)
 puts "New story added! #{story}, Category: #{category.capitalize}, Current Upvotes: #{upvotes}"
+

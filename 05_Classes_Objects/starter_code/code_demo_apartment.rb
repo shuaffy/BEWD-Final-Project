@@ -3,5 +3,30 @@
 
 
 class Apartment
+  attr_accessor :name, :rent, :sqft, :num_bedrooms, :num_bathrooms, :renters
+
+
+ def initialize(name, rent, sqft, numb_bedrooms, num_bathrooms)
+  	@name = name
+  	@rent = rent
+  	@sqft = sqft
+  	@num_bedrooms = num_bedrooms
+  	@num_bathrooms = num_bathrooms
+  	@renters = []
+  end
+
+def occupied?
+	@renters.any?
+end
 
 end
+
+west_vil_apt = Apartment.new("west vil loft", 9999, 500, 0.5, 2)
+west_vil_apt.occupied?
+west_vil_apt.renters.any?
+
+
+#add renter... by typing west_vil_apt.renters << renter1
+#define renter1="joe"
+#move jill in by typing... west_vil_apt.renters = [renter1, "jill"]
+
