@@ -9,4 +9,11 @@ class Apartment
   	@renter = []
   	@rent = []
   end
+
+  def to_s
+  	puts "apartment name: #{@name}"
+  	puts "apartment square feet: #{@apt_sqft}"
+  	puts "apartment bedrooms: #{@apt_bedrooms}"
+  end
+
 end

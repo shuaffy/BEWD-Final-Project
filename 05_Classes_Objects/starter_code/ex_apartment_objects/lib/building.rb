@@ -8,8 +8,12 @@ class Building
   end  
 
  def view_apartments
- 	@apartments.each do |apartment|
- 		puts apartment.name
+ 	puts "listing of apartments in building: #{building_name}: "
+ 	puts
+ 	apt_count = @apartments.count
+
+ 	@apartments.each do |unit|
+ 		unit.to_s
  	end
  end
 

@@ -94,6 +94,11 @@ class Student
   attr_accessor :name, :major, :course, :grade
 
   def initialize(name, major, course, grade)
+  	puts 'called .new but ran initialize ??..'
+  	@name = name
+  	@major = major
+  	@course = course
+  	@grade = grade
   end
 
   def grade_status
