@@ -16,6 +16,8 @@
 ##Scope
 ###Method Scope
 
+``` ruby
+
 	def SuperHero
 		def fly
       "Here we go!"
@@ -32,6 +34,7 @@
   >> fly
   => "I can't."
 
+```
 ---
 
 ##Scope
@@ -41,6 +44,7 @@
 * Below is an example of the SecretNumber class re-implemented to use a class method
 * BONUS: Go back and re-implement secret number exercise using a class method (HINT: the Game object stores the number, so you dont need a secret number object to do so)
 
+  ``` ruby
   class SecretNumber
     # gets a random number between 0-9, adds one so it's between 1-10
     def self.generate
@@ -49,6 +53,7 @@
   end
 
   >> number = SecretNumber.generate
+  ```
 ---
 
 ##Class Methods
@@ -60,6 +65,7 @@
 * below, self is used to indicate that 'generate_random_story' is a class method
 * in addition, self is then used to call the "stories" attr_accessor method on the NewsPaper instance (an attr_accessor getter method returns the instance variable e.g. @stories)
 
+``` ruby
 		class NewsPaper
       attr_accessor :stories
 
@@ -79,7 +85,7 @@
     >> paper.add_story(story)
     >> paper.stories
     => ["This random event happened on day 20 of this month."]
-
+```
 ---
 
 
@@ -119,9 +125,10 @@
 ###Glimpse into Rails
 
 *	Where you'll see it…
-
+```
 		class User < ActiveRecord::Base
 		end
+```
 
 
 ---
@@ -177,7 +184,7 @@ class.
 
 ##Mixins
 ###Upvotable Example
-
+``` ruby
 	module Upvotable
 		def upvote!
   		@upvote += 1
@@ -214,14 +221,14 @@ class.
   >> story.upvote!
   >> photo = Photo.new
   >> photo.downvote!
-
+```
 ---
 
 ##Sharing Behavior
 ###Modules
 
 *	What if we wanted to have two bat classes.
-
+``` ruby
 		class Bat
 			def fly!
 				puts "So free.. and blind"
@@ -237,7 +244,7 @@ class.
 
 		slugger = Bat.new
 		slugger.fly?!??!
-
+```
 ---
 
 ##Inheritance vs Mixins
@@ -275,7 +282,7 @@ class.
 ##Lab Time
 
 *	Midterm
-*	Secret Number
+*	Secret Number (if you haven't finished)
 
 ---
 
@@ -292,7 +299,7 @@ class.
 * We can define methods/classes with the same name, but namespaced differently
 * We would do this if (in example below) we wanted the Bat to behave differently depending on which namespace it belongs to
 * You will rarely use module namespacing (not at all in this course)
-
+```
   module Animal
     class Bat
       def fly!
@@ -312,7 +319,7 @@ class.
   end
 
   BaseballUtensils::Bat.new
-
+```
 ---
 
 
