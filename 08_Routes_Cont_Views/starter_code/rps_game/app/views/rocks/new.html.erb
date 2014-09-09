@@ -1,0 +1,7 @@
+<p>Welcome to the game of Rock, Paper, Scissors.</p>
+
+<p>Choose your throw: </p>
+
+<% ['rock','paper','scissors'].each do |guess| %>
+<br/><%= link_to guess, rock_path(guess) %>
+<%end%>

@@ -1,0 +1,14 @@
+<%if @is_correct %>
+
+<h1 style="color:green">YAY CORRECT.</h1>
+<% else %>
+<h1 style="color:red">INCORRECT!</h1>
+</br>
+
+You guessed: <%= @guessed_number %> </br>
+Correct number: <%= @rand_number %>
+<%end %>
+
+</br>
+</br>
+<%=link_to "PLAY AGAIN", new_secret_number_path %>

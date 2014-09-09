@@ -4,8 +4,13 @@
       <h2><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
 
       <ul>
+<<<<<<< HEAD
       <% @book.errors.full_messages.each do |message| %>
         <li><%= message %></li>
+=======
+      <% @book.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+>>>>>>> a98b5a3bb35c9141229b77ae1f60610cf35bad9e
       <% end %>
       </ul>
     </div>

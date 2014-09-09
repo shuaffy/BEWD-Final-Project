@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Rails.application.routes.draw do
+=======
+MyFirstRailsApp::Application.routes.draw do
+>>>>>>> a98b5a3bb35c9141229b77ae1f60610cf35bad9e
   resources :books
 
   # The priority is based upon order of creation: first created -> highest priority.
