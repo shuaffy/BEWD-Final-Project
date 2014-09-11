@@ -1,0 +1,9 @@
+<% if @is_correct %>
+  CORRECT!!
+<% else %>
+  INCORRECT!<br/>
+  You guessed: <%= @guessed_number %></br>
+  but the number was: <%= @rand_number %>
+<% end %>
+<br/><br/><br/>
+<%= link_to 'Play Again? *click here*', new_secret_number_path %>

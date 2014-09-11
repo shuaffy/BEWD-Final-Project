@@ -1,0 +1,14 @@
+<h1> Welcome to Rock paper Scissors!</h1>
+
+<br/>
+
+<table>
+  <tr>
+    <% @throws.each_with_index do |throw, index| %>
+    <td>
+      <%= link_to image_tag("rock_paper_scissors/#{throw}.jpeg"), rock_paper_scissor_path(index)%>
+      <h3><%= throw.upcase %></h3>
+    </td>
+    <% end %>
+  </tr>
+</table>
