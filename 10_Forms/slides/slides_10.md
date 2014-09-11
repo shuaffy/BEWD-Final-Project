@@ -2,13 +2,14 @@
 
 #BEWD - Forms & Validations
 
-###Instructor Name
+###Nick
 
 ---
 
 
 ##Agenda
 
+* Class Feedback
 *	Review
 *	Forms
 	*	Search Forms, Create Forms, Partials
