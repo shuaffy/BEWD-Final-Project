@@ -1,0 +1,21 @@
+<h2>See all the shirts!</h2>
+
+<%= form_tag shirts_path, method: :get do %>
+  <%= text_field_tag :q, params[:q]%>
+  <%= submit_tag 'Search' %>
+<% end %>
+
+<br/>
+
+
+<% @shirts.each do |shirt| %>
+  <%= shirt.id %> ||
+  <%= link_to shirt.name, shirt %>:
+  <%= shirt.description %>
+  <%= link_to '[ EDIT ]', edit_shirt_path(shirt) %><br/>
+
+  <%= form_for shirt, method: :delete do |f|%>
+    <%= f.submit 'Delete' %>
+  <% end %>
+
+<% end %>
