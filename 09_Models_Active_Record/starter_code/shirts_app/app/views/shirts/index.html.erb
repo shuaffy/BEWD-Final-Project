@@ -2,10 +2,21 @@
 
 <body style="font-family:Arial">
 
+<%= form_tag shirts_path, method: :get do %>
+  <%= text_field_tag :q, params[:q] %>
+  <%= submit_tag 'Search' %>
+<%end%>
+
 <% @shirts.each do |shirt| %>
 
-  <%= shirt.id %> || <%= shirt.name %>: <%= shirt.description %> </br>
-
+  <%= shirt.id %> || 
+  <%= link_to shirt.name, shirt_path(shirt) %>: 
+  <%= shirt.description %>
+  <%= link_to '[EDIT]', edit_shirt_path(shirt) %> 
+  
+  <%= form_for shirt, method: :delete do |f| %>
+   <%= f.submit 'DELETE'%></br>
 	<% end %>
 
+<%end%>
 </body>

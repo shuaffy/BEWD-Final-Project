@@ -2,14 +2,37 @@
 
 <body style="font-family:Arial">
 
-<p>
+<table border ="1" style="width:30%">
+<tr>
+<td><%= link_to '  New Movie', new_movie_path %></td>
+<td><%= form_tag movies_path, method: :get do %>
+  <%= text_field_tag :q, params[:q] %>
+  <%= submit_tag 'Search' %>
+<%end%>
+</td>
+</tr>
+</table>
+
+</br>
+
+
+
 <% @movies.each do |movie| %>
 
-	 <%= movie.id %> || <%= movie.title %>, <%=movie.description %>, <%=movie.year_released %> </br>
+	 <%= movie.id %> || 
+   <%= link_to movie.title, movie_path(movie) %>, 
+   <%= movie.description %>, 
+   <%= movie.year_released %>
+   <%= link_to '[EDIT]', edit_movie_path(movie) %> </br>
+
+   <%= form_for movie, method: :delete do |f| %>
+   <%= f.submit 'DELETE' %></br>
+   <%end%>
 
 
-</p>
-</body>
 
 <%end%>
+
+</body>
+
 
