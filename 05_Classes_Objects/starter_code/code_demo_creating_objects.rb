@@ -1,5 +1,5 @@
 
-#Code Demo Creating Objects. 
+#Code Demo Creating Objects.
 #Why use Objects?
 # => Follow allowing with the instructor, comment out code and run the file to test your assumptions.
 #TIME: 45 min
@@ -81,7 +81,7 @@ edward.grade = "D"
 
 # puts "#{jimmy.name} has #{grade_status(jimmy)} #{jimmy.course}"
 # puts "#{pepe.name} has #{grade_status(pepe)} #{pepe.course}"
-# puts "#{edward.name} has #{grade_status(edward)} #{edward.course}"
+puts "#{edward.name} has #{grade_status(edward)} #{edward.course}"
 
 
 #####################################################################################################
@@ -93,6 +93,7 @@ edward.grade = "D"
 class Student
   attr_accessor :name, :major, :course, :grade
 
+<<<<<<< HEAD
   def initialize(name, major, course, grade)
   	puts 'called .new but ran initialize ??..'
   	@name = name
@@ -101,6 +102,8 @@ class Student
   	@grade = grade
   end
 
+=======
+>>>>>>> 4cd6460f176dc202a9775442974153f5b6fe6efe
   def grade_status
     if @grade == "F"
       "failed"
@@ -111,6 +114,17 @@ class Student
     end
   end
 
+<<<<<<< HEAD
+=======
+  ## given by default with attr_accessor :name
+  # def name #getter
+  #   @name
+  # end
+
+  # def name= input_name #setter
+  #   @name = input_name
+  # end
+>>>>>>> 4cd6460f176dc202a9775442974153f5b6fe6efe
 
 end
 
@@ -146,22 +160,35 @@ end
 # One more thing though...We can make this program more efficient with less code.
 # Add the initialize methods along with to_s so that the code below runs correctly.
 
-# class Student
-#   attr_accessor :name, :major, :course, :grade
+class Student
+  attr_accessor :name, :major, :course, :grade, :gpa
 
-#   def grade_status
-#     if @grade == "F"
-#       "failed"
-#     elsif ["D","E"].include?(@grade) && @major == @course
-#       "failed"
-#     else
-#       "passed"
-#     end
-#   end
+  # Student.new runs this..
+  def initialize(name, major, course, grade)
+    @courses = ['Math 101', 'Bio 203', 'Chem 206']
+    @name = name
+    @major = major
+    @course = course
+    @grade = grade
+  end
 
-# end
+  def grade_status
+    if @grade == "F"
+      "failed"
+    elsif ["D","E"].include?(@grade) && @major == @course
+      "failed"
+    else
+      "passed"
+    end
+  end
 
-# jimmy = Student.new("Jimmy Mazzy", "Math", "Math", "A")
+  def say_hello
+    puts "hello! My name is #{@name}"
+  end
+
+end
+
+jimmy = Student.new("Jimmy Mazzy", "Math", "Math", "A")
 # pepe = Student.new("Pepe Phaenagrotis", "Music", "Math", "C")
 # edward = Student.new("Edward Ellis", "Math", "Math", "D")
 

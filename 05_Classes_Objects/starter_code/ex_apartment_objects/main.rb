@@ -1,4 +1,5 @@
-# Exercise Goal: This is an exercise in reading and writing code.
+# Exercise Goal:
+# => This is an exercise in reading and writing code.
 # => The purpose of this exercise is to practice creating classes.
 # Task Instructions:
 # => The main.rb file is where the application starts, and we've given you the code below.

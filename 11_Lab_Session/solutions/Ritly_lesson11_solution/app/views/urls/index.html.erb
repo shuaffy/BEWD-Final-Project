@@ -1,0 +1,6 @@
+<h3> Urls and HashCodes </h3>
+<ul>
+<% @urls.each do |url| %>
+  <li><%= url.link %> has hash <%= url.hash_code %></li>
+<% end %>
+</ul>
