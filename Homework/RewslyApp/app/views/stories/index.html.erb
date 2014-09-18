@@ -1,0 +1,23 @@
+<h1 style = "font-family: Arial; color: #58ACFA">Hello, welcome to <font color ="#FF8000">Rewsly</font>!</h1>
+
+<h3 style = "font-family: Arial; color: #58ACFA"><%= link_to "+ Add New Story", new_story_path %></h3>
+<%= form_tag '/', method: :get do %>
+<%= search_field_tag :q, params[:q] %>
+<%= submit_tag "Search" %>
+<% end %>
+<br/>
+
+
+
+</br>
+
+<% @stories.each do |story| %>
+
+   <%= link_to story.title, story_path(story) %>, 
+   <%= story.category %>, 
+   <%= story.upvotes %>
+   </br>
+<%end%>
+
+
+</div>

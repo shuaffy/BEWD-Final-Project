@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ritly</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body style="background:#eeeee">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <%= link_to "Ritly", root_path, class:"navbar-brand"  %>
+    <ul class="nav navbar-nav navbar-right">
+
+          <li><a href="http://www.Bit.ly">For the Real thing click here</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+	<div class="container">
+		<%= yield %>
+	</div>
+</body>
+</html>
