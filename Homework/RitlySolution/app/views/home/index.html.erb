@@ -1,0 +1,13 @@
+<h1>Welcome to Ritly</h1>
+<p><%= link_to "Click here to create a new short link", new_url_path %></p>
+
+<% if current_user %>
+	<%= current_user.email %> is logged in.
+	<%else%>
+	Not logged in
+<% end %>
+
+<%= form_tag destroy_user_session_path, method: :delete do |f|%>
+<%= submit_tag "Log Out"%>
+
+<%end%>

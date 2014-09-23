@@ -1,0 +1,21 @@
+<h1>Welcome to Rewsly</h1>
+
+<h3><%= link_to "+ Add New Story", new_story_path %></h3>
+
+<%= current_user.email %>
+<%= form_tag destroy_user_session_path, method: :delete do |f|%>
+<% submit_tag "Log Out"%>
+<%end%>
+
+<%= form_tag '/', method: :get do %>
+  <%= search_field_tag :q, params[:q] %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<br/>
+
+<div id="stories">
+  <ul>
+    <%= render @stories %>
+  </ul>
+</div>
