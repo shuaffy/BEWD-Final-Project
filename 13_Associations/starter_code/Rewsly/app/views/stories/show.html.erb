@@ -1,0 +1,21 @@
+<h1><%= @story.title %></h1>
+<p><%= link_to @story.link, @story.link %>
+<p><%= link_to "Back to home page", root_path %></p>
+
+<br/>
+Add Comment:
+
+<%= form_for [ @story, Comment.new ] do |f| %>
+  <p>
+    <%= f.text_area :description, placeholder: 'Add a comment...' %>
+    <%= f.submit 'Add Comment' %>
+  </p>
+<% end %>
+
+<ul>
+  <% @story.comments.each do |comment| %>
+    <li>
+      <%= comment.description %> by <%= comment.user_name %>
+    </li>
+  <% end %>
+</ul>
