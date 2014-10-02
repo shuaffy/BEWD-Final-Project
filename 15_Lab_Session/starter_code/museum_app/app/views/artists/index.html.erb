@@ -1,0 +1,17 @@
+<h1>View paintings by artist!!!</h1>
+
+<div>
+  <% @artists.each do |artist| %>
+    <h2 style="color: red">"<%= artist.name %>"</h2>
+
+    <% artist.paintings.each do |painting| %>
+      <p style="color: blue"><%= painting.title %></p>
+      <p style="color: purple"><%= painting.museum.name %></p>
+      <p><%= painting.description %></p>
+
+
+      <% end %>
+  <% end %>
+
+
+</div>

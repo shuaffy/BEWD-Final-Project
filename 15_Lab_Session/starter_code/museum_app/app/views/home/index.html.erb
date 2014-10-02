@@ -1,0 +1,13 @@
+<h1>Welcome to Museum App!</h1>
+<h2>Find Your Favorite Paintings Here</h2>
+
+<%= form_tag 'paintings', method: :get do %>
+  <%= search_field_tag :q, params[:q] %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<div><%= link_to "Paintings", "paintings" %></div>
+<div><%= link_to "Paintings by artist", "artists"%></div>
+<div><%= link_to "Paintings by museum", "museums"%></div>
+
+<div><%= link_to "Add New Painting", new_paintings_path %></div>
